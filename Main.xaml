@@ -1,0 +1,283 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="614.666666666667,2882" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="40">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="35">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="624.666666666667,2817.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:String" Name="tbl" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="582.666666666667,2725.33333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="dc85837f-2750-43f5-af2a-260cdef4d41d" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="548.666666666667,2507.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="STRG" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='link livros'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='preços livros'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column1' attr='href'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='h3' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='text'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="506.666666666667,158.666666666667" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Page" MaximumResults="2" ScopeIdentifier="dc85837f-2750-43f5-af2a-260cdef4d41d" Version="V1">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://books.toscrape.com/" DesignTimeRectangle="1754, 896, 85, 48" ElementType="Text" FriendlyName="'next'" FullSelectorArgument="&lt;webctrl aaname='next' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='next' tag='A' type='' class='' check:innerText='next' /&gt;" Guid="fca22798-9d28-4e1a-ba84-6b1726ef3234" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFkAAAA0CAYAAADhYZQrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAVSSURBVHhe7ZrPT9tIFMf3b+PEiROnnjj1xK0nTj31hFChWhWJqqqq5dIcEGq1W61WlVZoDwiFRlEApbsbEiIoApblRyKUoMDb+dgex0nsxE5iLyTzlUYI27HnfWbmzXvP/kGMYpeBnIAM5AQ0NMi1Wk0uLy/l5OREDg8PpVQqyf7+vhQKhQff6Cf9pd/0HzuwZ1gaCPLt7a2cn59LuVy22tnZmVxfX1sdbDQacn9/71z5sEU/6S/9pv/YoW3CPuwcRH1Brtfr1ogXi0WrE/w/isIu7MNO7O3XzsiQ9UMvLi4ezUwdVNiJvXpSRVVoyCwl7bNYWuMo7NZ7ThSfHQpytVq1NoerqyvnyHgLDvCASxj1hMxGwDK5ublxjhgheMAFPr3UFTIjxY2GGc6MkuACn14zOhAyN2BJmBncXfCBU7eJGAgZ5258cDjBCV5B8oVMmMIuahRe8AoK7zogE3DjZ8Y1TOtX8IKbX8LSAZkRIfA2ii64+XmAFsjk6IzGuGRywxbc4Nde62iBjE/pJ200asqPYQtkqk6jWuxJSvCDo1cuZOK89pMjqcsjWf9UkGPn3zgER2/c7EKmUE0ddbRVlqWFLZlY+RYrZDjCU8uFzK4YJg9/3FKQ5+OHDEdvlOFCjlq+e5xKBjIcvRmgC5l3XLElINkdmVDGLWUbUtnNy9zrLZnEWLV0Z97vyeaZz3PvruSvjZw8W1TXca1q029z8sufral+JZOTKc6/2pPdO+egpYp8TaWt381+OXX70NJigg1HeGq5kClyxBYfOwY+T+3ItPoLrKW1nAXbMnZxR756F9Hdqay/sc9NvszIi7UdWUplZQZ/qo49+11Bc9WEOfO5iUzDn3yjQAL/oKCeqe5hPS8j89zz17L69fAFR3hquZB5axub3FmUVrPZa1ZFNj/YgOb+0DO0IQeft21o64etEKrHsmrB35Z17xSsKjfwyj6+WlKr4rwgcwzIQlY2WqqQybgL5OWZLOR3hc6Z45yb/fKPc+BIlnERi+3L35G6HlfzxDNrUX3XXiUTK3uy/E797RhQNAaQpz4eOQc8aod8/E1mAaGXdHv7kLF9cMeANWT3o70qaNNrKrFyzjQ1BpCbs9WjIMi9mh+og7w8tc6nZT7TsWaU/mfISWx8kSCvFn1mYhepzTK1YgOestxNTjY73golAzlw40sihAsF+U6BsDatnGz4hO31dE4mF9Iy87PX9TQ3y9nfTpuRhRqo1vmcDOTAEC7WZCQKZI9vnU6VpOLd/NwoIi3Lec+EyO85m56CZ11fkY1VriNqaaa3FmQG8Me8HDhH4lBgMhJrWh0JslLtWFJd4uQnalNzZ2hNg9+W1HcP+GpRXlgrIuMJ9/514++nP6l7xhQnB6bVsRaIokJGOuNTAK3sULWp11l5u+29zj8R0apsZa3fugkJx/5WGafOIgkT7cNDVWCBiCk+FqXOBBRY6kScNEX7wdS1aI/M66fB1fP1k3mROpjg1vNFKmJXNJ8E9KdQnwQgfAqjEVtiMqKCF9z89rQOyAif4jciRsGCV9B+5gsZkbGYDw7Dqa8PDhFxHkUO8+lsdw306SwyH4F3F1zg0/dH4Frk4dzIzOhWwQMuYeo9PSEjRoolYXy0LTjAo9cM1goFGbE0cO7souMa3mE39kctC4eGrEWYwjIh8B6XzBA7sRe7g8K0booMGRFwM6L6oaNaVMIuPamwt187+4KsRY5OJ6g60aijshGwlFhaj2Wm00/6S7/pP3Zom7CvvRYRVQNB9ooOUqjWPot3XGwOvLV96I1+0l+952BHFJ/bS0ODbBQkkf8APlKrlWvVPQEAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='chrome.exe' title='All products | Books to Scrape - Sandbox' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://books.toscrape.com/index.html" DesignTimeRectangle="530, 293, 1331, 3075" FriendlyName="'A Light'" FullSelectorArgument="&lt;webctrl tag='OL' /&gt;" Guid="16e94e7b-0842-4ac3-aff2-eb810496f147" InformativeScreenshot="e4f416b128dfa8253e6ba190d7892a96.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='All products | Books to Scrape - Sandbox' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <Sequence DisplayName="Adicionando colunas na tabela" sap:VirtualizedContainerService.HintSize="506.666666666667,700" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" Unique="{x:Null}" ColumnName="Título do Livro" DataTable="[ExtractDataTable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="334,190" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" MaxLength="200">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:AddDataColumn>
+              <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Preço do Livro" DataTable="[ExtractDataTable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="334,52.6666666666667" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:AddDataColumn>
+              <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Estoque do Livro" DataTable="[ExtractDataTable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="334,52.6666666666667" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:AddDataColumn>
+              <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" Unique="{x:Null}" ColumnName="Descrição do Livro" DataTable="[ExtractDataTable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="334,190" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_4" MaxLength="200">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:AddDataColumn>
+            </Sequence>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="506.666666666667,1319.33333333333" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="472.666666666667,1201.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="str_titulolivro" />
+                      <Variable x:TypeArguments="x:String" Name="valor_livro" />
+                      <Variable x:TypeArguments="x:String" Name="stock_livro" />
+                      <Variable x:TypeArguments="x:String" Name="descricao" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="430.666666666667,83.3333333333333" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[CurrentRow(0).ToString]" Version="V1" />
+                    <uix:NGetText DisplayName="Get Text 'Tracing Numbers'" sap:VirtualizedContainerService.HintSize="430.666666666667,158" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="dc85837f-2750-43f5-af2a-260cdef4d41d" Version="V1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://books.toscrape.com/catalogue/tracing-numbers-on-a-train_869/index.html" DesignTimeRectangle="981, 440, 858, 59" ElementType="Text" FriendlyName="'Tracing Numbers'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' /&gt;" Guid="046ca342-56e4-44ba-aa65-fd36b49acbeb" InformativeScreenshot="06e9a6755df7f54b7f23ba0aa14d7c8c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Tracing Numbers on a Train | Books to Scrape - Sandbox' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[str_titulolivro]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text 'Price (incl. tax)'" sap:VirtualizedContainerService.HintSize="430.666666666667,158" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="dc85837f-2750-43f5-af2a-260cdef4d41d" Version="V1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://books.toscrape.com/catalogue/tracing-numbers-on-a-train_869/index.html" DesignTimeRectangle="926, 646, 913, 56" ElementType="Text" FriendlyName="'£41.60'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' /&gt;" Guid="c80eb860-bcfe-43c4-bdf9-0e2f94b43c35" InformativeScreenshot="eb747011f1f9df36cdfd1640a370e3ef.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Tracing Numbers on a Train | Books to Scrape - Sandbox' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="79, 646, 847, 56" ElementType="Text" FriendlyName="'Price (incl. tax)'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='' aaname='Price (incl. tax)' check:innerText='Price (incl. tax)' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAA1MAAAA8CAYAAACD8uCOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAgySURBVHhe7d2xaxtnHwfw93/ypMFgCBg6aIqWCgo1GRoKNRRqXqjJXFQoIoPpEJQlS0yguENRoWQouGCUoSRQUKFJoOAhYAgYMhwYfr2T7nQnWbKdi6NU7/v5wBeax9b57tThvjx3z/0nckmSiIiIiIiIyBWjTImIiIiIiNTIpEw9f/5cRERERERErhhlSkREREREpEYmZQoAAICrU6YAAABqUKYAAABqUKYAAABqUKYAAABqUKYAAABqUKYAAABqUKYAAABqUKYAAABqUKYAAABqUKYAAABqUKYAAABqUKYAAABqUKYAAABqUKYAAABqUKYAAABqUKYAAABqUKYAAABqUKYAAABqeIcy9TS6a2uxtijrm9H+fDceHJ3kv391T++W2+n+ng9+YC8ebo336b/9OM3HPtR+nvy4Pfm72z++/fn9oM6G0Wum+76+HQfH+RgAAKyg91emJmnE1qMX+Weu5l9Xpl4/jt318bF0jpJ88H+kTJ2dxvBRL/qv8n8vwfGjcTFtfP14UkwBAGDVLKFMZdmK/b/zj62g4f3W+DjWu/H0LB/8gK6tTL0axN6tRrqd7ThYYpmKVwexPdr/ZvT+yMcAAGDFXFOZSktGPlpI/i4u1POL/p9W7Ha0QjKIzmhWai0ad2eP8sO4njJ1EgdfFN/fkstU9W9XbpsEAIBV8t7K1MhRJ/955aJ/MiuR5ouDePpbN7ZuZP/eiNa3h6ML6wtvnzsdRv/uTrQ/yota9mzWV70YLCgDJ0cPYvfWZjRG22vE5q23e44r+a08hs5v5S1+mfn7OXNezk5icG8nWqNjXIuNmzvRW/T3Xw3iwZ3bk99du9GK298cxHCmbbxzmap+BzOZHEd2+9/P3dj5uDh3aUbnuhv9P6s7lMThN2VpbqaFc3KW/uxFa/LZThy+ycdTLx62888su8gBAMD1WP7MVPVCvtmKVj7rk2Xr0XhFgoVl6rgfO0XRmM16O3rPqmUnieH9rbIIzKRVvei/wNO7xTFsR3+mt1xeplrR/rg8B2Wmn73KJL/vRbtyLqZyY2fqmab3X6aS9NjyWxvnphV71XP95nAyeze6pfNlOnb2IvY/Lcaa0X0yc7af7U2+m91fzE0BALB6lvTMVFoGXucfm7mQ37r3NE6z55BeH8dJPnMxv6RUb0trRfcovwD/O91ecSH/6X68KJ5pqsyKtO4Oxn8jm215uD2ZpZotNOelheCTfNtzCuPlZWotGl/uj2eW0r89qBaUbw7LMpekn8lWuMvGs1XuXo5/cvqkOzmGRuX33/ttfum5a47GG7H9w4tI8nOaFb7xeJrvBuPB3Okvu5Ny1Pi6H4Ni9cM0c4tr9f+D6rkAAIAVsYQytRE7P1XWwJ4qU7vxeM6kxNyS8nI/2vnY7LNLw/vN/Peb0fszG0li8G0xI9SJw+qV+tmg3O/LVpOr/u4XB2n9mHZ5mZopKdVjr2yveivhdDk6jcdfF9sqz9VSn5lKTuP4j0H0H3Viu7i1Msu585Ht65xZuJtpCa3c3leqnKfPDsIq6QAArJr3VqYaH7Xj9p0Hcfhypq5UC8Un+zFv0fR5JSWb+SjGLi8Q1RmlC7K+lx7FBRaUn8LlZWpmNis5jE7xs8r2yjJY3c5iyyhTyV/96H5ZeV5qNnPOR7mEfJGZ2wGnXHCeAABgBbzfBSjmuaSgZOaVlLcrEBcXvTKX7Pd1l6nqzyrbm7+dxZZxm99k4Yi1jdi6sxcHvw7j+OVl3102I7iZfy5NsxuDubNSGWUKAIDVtjpl6qe3KRDD6BXPIL3LhfqyytT35e1xyyxT/S/zfZkpU+WiGzMLR1xyPpIn3fKZqjzN7wYLnodSpgAAWG0rU6aqz0zNLlhw/hbAbLnuYhvt8epyhQuevTpvfvkpXFeZqj4z1X44feNjeQtgoyyW11KmqvtfLVOLZ6yq+3nufLwZVBbRaEf7Zv7f2UIfM0vKj118bgEA4N9udcrU1EV+Kzq/5p98nV7EFxfu67vxOF81MDnqlKvLTVbUO4n+nWLWpZUvVnGR4zj4LN/2nGO8rjI1u5rffv4epyS7ra54BulmL4b5qnqLytTblqxy/5ux9ywdOEtGK/eVM1PlaovJ8WF0JgUpzdR3N/2uqe0fjiN5tld5x1T5vUxU/z+YWRkQAABWwQqVqdRF75maXTUwvcBf/K6kRmw9mrf0xXnlLXh13jN1xTKVuvA9U+vt2Pu9nN25rjJV/f0io+OYemaqkvWN2Cj2sbJ4SHVZ9Oy4jkelLz3/35fnvzG7cqL3TAEAsOJWq0xlTofRv7sT7WKZ7vXNaH/VjX4+mzPr5OhB7H7eio3R9hqx+fFO9I4uLxqF6gxX90k+mLvOMjXyahAP7tyOVlEYb7RGKyIOZlbau64ylc3UDe5tx2ZekLIVGDu/5rNifx1E51a+ml96jrfy/ShvO8xfzju1gl8+VniTHm/ldr/Ji5tTxz/czsfPryQIAACr4B3K1P+JZBCdvCw07w/zQd5N5f1ZCwo1AAD82ylTVzC8l8/GNHuhTl2Dyvu2dn52ix8AAKtJmbqK1/3YGV38N6P3Rz5Gbac/75TlNF9UAwAAVo0ydUXD++PFFBrfLnpvEldzHPufZsW0YeEJAABWmjIFAABQgzIFAABQgzIFAABQgzIFAABQgzIFAABQgzIFAABQgzIFAABQgzIFAABQgzIFAABQgzIFAABQgzIFAABQgzIFAABQgzIFAABQgzIFAABQgzIFAABQgzIFAABQw6RMPX/+XERERERERK6YSZlKkkRERERERESulCT+Abq0AEzEE2sxAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[valor_livro]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text 'Availability'" sap:VirtualizedContainerService.HintSize="430.666666666667,158" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="dc85837f-2750-43f5-af2a-260cdef4d41d" Version="V1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://books.toscrape.com/catalogue/tracing-numbers-on-a-train_869/index.html" DesignTimeRectangle="926, 757, 913, 56" ElementType="Text" FriendlyName="'In stock (15 available)'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='6' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' /&gt;" Guid="b5f96d87-d788-4f1c-a866-68ac57509a4b" InformativeScreenshot="e84bad9b4143ccee6c933455153d24fb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Tracing Numbers on a Train | Books to Scrape - Sandbox' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="79, 757, 847, 56" ElementType="Text" FriendlyName="'Availability'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='6' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='' aaname='Availability' check:innerText='Availability' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[stock_livro]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text 'Product Description'" sap:VirtualizedContainerService.HintSize="430.666666666667,158" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="dc85837f-2750-43f5-af2a-260cdef4d41d" Version="V1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html" DesignTimeRectangle="79, 334, 1760, 180" ElementType="Text" FriendlyName="'It's hard'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;article&amp;gt;p' isleaf='1' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='P' class='' /&gt;" Guid="d88c4eca-fb6d-4e66-858d-bd8286793744" InformativeScreenshot="8e57e5b365e4d6529992dc0c12105df8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='A Light in the Attic | Books to Scrape - Sandbox' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="79, 217, 1760, 72" ElementType="Text" FriendlyName="'Product Description'" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname='Product Description' check:innerText='Product Description' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABuQAAABMCAYAAACVrdFNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAABFRSURBVHhe7d3PZ1z7/wfw7/+U1SxCKOEusspsMoQbn8U3yieUxqXRxa0PNZdr3EV0caVUfegoV7q4JlS/lJSau6iUknKllFmUUIa7GMLrO5OcyZwzc2Yy02TaJH08eNOec+Y971/ZzNP7ff4nAAAAAAAAgKkRyAEAAAAAAMAUCeQAAAAAAABgigRyAAAAAAAAMEUCOQAAAAAAAJgigRwAAAAAAABMkUAOAAAAAAAApkggBwAAAAAAAFMkkAMAAAAAAIApEsgBAAAAAADAFAnkAAAAAAAAYIoEcgAAAAAAADBFAjkAAAAAAACYIoEcAAAAAAAATJFADgAAAAAAAKZIIAcAAAAAAABTJJADAAAAAACAKRLIAQAAAAAAwBQJ5AAAAAAAAGCKBHIAAAAAAAAwRQI5AAAAAAAAmCKBHAAAAAAAAEyRQA4AAAAAAACmSCAHAAAAAAAAUySQAwAAAAAAgCnqC+QOY/vfMzEzM26Zi+JyKdbvP47tN41oHSXVXFF7v/X6VnmTXLz2JpnzQswvlWL1biWqO/vRaCVVMNybSm/8fttLLn4r6blei+1PyWUAAAAAAGCqzhnIZUth6V7UPiZVXUFXMZBrftiNrd9q7Zn7UueY89lS3Hu2H80rHsRO1dcO5I4OY+/pvXj8Nvl/hkAOAAAAAAC+hZGB3NxiKUrLI8rSfBS6YUO3zK7FdiOp7oq5UoFc6yBq/ymdjP+/ty8skBs554tzp8+lS/HnF9EQyuX7ioFc881WrN44+a789SuQAwAAAACAb2FkIDdWKHXUisbLSpRme58r3HkRzeT2VXKlArlP27GWtPUiA7lx+t36WI+tm9lwrvjbXjjB8tv6Po9cBQAAAACAy+/8gVyi9aqc2i1XiuqH5MYVIpCbpN+t2H+4kprzQpRfieS+JYEcAAAAAABcThcWyEUcRHW599nVP67euZUCuUn73YwXdwqnn535sRoHjq78ZgRyAAAAAABwOV1gIJcNBKb9vqxpEMh9Qb/T7ZhZiK13yXW+OoEcAAAAAABcTl8pkEvVm4RHzbfV2PjX/MmRh7PzUbpdie13OW+e+3wQu0/Lsb5cjLlu3Z3nb27E5rO9OBx3R1bnXXevq1G+XYr57vvubhRj9e7jqH86eWRkoPGmcnrv7LBxLyrdZ2cq7f+NcNSMg5cn7Sre6H6mEPNLq7HxaDcO+ock3Y68MnE4d85ALlqxe7/3+YWH+8n1ITrz+WgjVpeSue+U9jyUbpej+roRrXHms9WIvWebsXEzNZfHY1aK9fvV2P0w5hsMJx37YxOu5ZHrJrVOuvN2dBj1zvgsdt/RN0F7hpTenKafXYvtZN3nGjU2D7Zjb9RnM9+TrP+8v7/jsWrP+8uDaNpZCQAAAADANXaBgVw2mCk8GB7IHbypRDF5Ll3Wd1KJw1Ez9h6t9kK4YWW2FJVXZ0RQh7tRWUodrThQ5mL9z0bUv3Ig1/q7GuunYceQ0u7fveep4z8vXSAX0Xy+0fv+5WocJNczxpzPwlIldkd0oPVmM0qnIdzwMnfzcez/k3woxxeN/bEJ1/IEgVyj8SLuLSb/zyu5az07f3ll0kCu+fZxrJ41NjOFKP26OyQQT39Pe/3/sx9b/xr199ee939tjZwvAAAAAAC4yi4ukGvVo5wKSsqvWsmNjlS9C8UoHj83F6u/bcfu63rUnpZjbbES9e5Hjhrx4ufiaV3HO3NulaO6U4/68fOV2Pixu4Po5P7asyHvrPtnLyrpkOPGyvEOn8731neqUb7V3am1EAsLveemHci1+oKcwg9rUX6U165OKcTG8yTg+XxwPAb1nUqUuveXK1HrXOuUt41Ij/zZzjHnXe+3YqHblnZ/6wMhTSv2fhs1n+35/yEV2MyuxXbedDa2Y+10jc3Fyt3KaR3117Wo3l9L7Zhrj+mdF5G3qeyLx/7YhGt53EBuea39ueTfqTW629kJmFnrxfYcpWe4FY23J2Pw+KfuMzOx/t/uuNTj4HPyaGau8wO5xvN7g2PztHZSV3tsKndXMqFq4dZ2NAbmO/s9a7eSuU3/7b3cjs07pdQ4D58vAAAAAAC46i4mkDtqRj0duMyWe4HEsWy9g6FCVuOPtVRda1F9n/8zfePZeiocKMbW++TGqc6uvV7QU7hVjYOcXTiHr8oDu5ymGsj9s5sKLwtRelDPPbKv8WytF1j0j+lleYdcR+Y9coNBz+Gf6X4Mmc/ODrqHK73nFrdiPzMmraj/0p3Lhai8HhLdZEK7hcE1ce6xn2wtjx3IJSV3jbbHZv9Jtj27Oev47HfIZYOygUCuM3bd72iPzdqT/fyjJD9uZ3YXFgeOKe0fo/YzP9dygruI5l/pcHQlqh+TGwAAAAAAcI2cL5D7pxmNN9tRuZnewTMTK0/6Dy3s+4H+p9rwnTCZnXZnhB1tB09Whtf7sRor3XtDQoyuTAjYLtMM5BpPe20evSsoGyhmjvS8TIHcYW14IDfRfI7ob+zH1ukOxuHHgHZ0xndusXT8nsHHb7Kje/6xn2Atd0wSyC12jndMbg3Itmfl6eAWwvMFcunAcyaK7baO/Mv7kPrbmlmP2ukuvI6+MVroD1fTOv3qPZvdjQgAAAAAANfDyEDuS8rZR9jNxNqz4fFR5n1kZ4UdHZnAJ7vDJh2+lAZCwj59R25OL5BrRPXH7r2F2HqXXB7m3VYUfzgJlyr/lwphLlMgd1RP9Tcb9Ew8nx+qvaM4M/1KB3Ltef6QXJ7IRYz9+Gv52ASBXDaAzJEOmHPe1XeuQK75Ija6dQ8EbHmyAV42IMyO0Vl/e4fPemH4meMJAAAAAABX0MUFcrPzsfZ7PQ5zd8KMH/rsPej9yL/253g/ztd/7dXd22HTjBd3utcLsfk2uTxUdqfO1AK5dPAxu9kX1k3gihxZmZnPscKWvdg8DUY34sVpRpUNgGZmS7HxqBb7H0fvoMy4kLGfcLzGDuTSfR3mIKrL3efXotY3nOcK5N5u9o7EvFUbbz39lepbZrfhZGMkkAMAAAAA4LobGcgdH/u3PLys3q3E5qPt2H3XiNbQI+k60vWuxvbgaXuJ9HPjhGgn0j/o93bjpHdU9R/Pl6/xx+ppPVML5N5vxUL33nmCtCsRyGXrXv9vPeqvzyq1qJyGTqXsTrjM++FSZXY+VtprsbqzH40Rx5JezNiPu5YT4wZyOTveBo0Ojc8TyKX/hgoPxowq0/OeaX/6e3Le49dHIAcAAAAAwHV3vnfIjW14EJA17nNZ6R/0e6FHNhSrjwwMT6TrmVogl67n/m5MsL8r6zIFcuk+ZfqbrftLSn97Wn9vx72l1E65nDK3uB6Vnf1o9s/5hYz9hGt03EBuzDkcFbpdVCA3diiWCWKHzfvZYySQAwAAAADguvtOArly7I6RvgjkvmzO0zsLs23J1v0lJbc9R61ovKtF9f56FG/kf65TCkubsZfeMSeQG9p2gRwAAAAAAEzPJQ7kvuzIytU/umcITn5k5VcJ5NLv6jpPkHZpArlm1H7qfb53ZGhHuu4xjnf8Qq1PB7G3U43y7WLMJe3olkI6eLuQsR93LScuNJAb/V7Eb3pk5f9uR296JxsjgRwAAAAAANfdJQvkIvYe9I4jXPtznB/ns+/V2njeTK5nw4tx+pL+7nMFckN3DrUd1nr3Zjez93LtRWV2PnlnX60XelyWQO5DNVa67eh/51tb/dde3eVXX7wfcHxHzdh/stYL3mY24kV3SVzI2E8WNo0dyLXXydnHqqZD5lS/EucJ5DJh5a3aWOup9ap8+n0zd160/+K6JhsjgRwAAAAAANfdpQvkMj/y/1RL/cg/RKse5dlu3dlAKP1D/8Lv+8nVIY7SYccZgVwmfMjRfrYXCPUFcnEQ1eXuvcEAa8CHapTyvvdSBHKd0DP1PrecdjSfb5zeL/xSP/uYyOP5nIvicilKtx/HXtLh1vtabN5fj9LSfBQfnjGXmTFOr7eLGPvJwqbxA7mF2HqXXB4m3Z6csT5XINfajXK37pn1qH1Org/VivovvbkfvjNSIAcAAAAAAJcukMsGbMV2G0ZHOAdPVpJn2+XHaurYvLbPtVjv3pttf++IIxM7QWAvRMvpezoAW9iK/aG7mfpCqoFALqLxtNfmzJGKA1pR/3Xh9Nn1nVQM+M0DuVZ77NM70Yqx9T65lfb5RWyk5jP3mZSh8/kxtRNv5Pi3ZcLV7E6y84/9ZGHT+IFcuz0jg97OTtDeusqshcS5ArlOf1MBW7Hd1pF/eZmdkStR/ZhcPzbZGAnkAAAAAAC47i5fINfW+KP3A/3M7Epsvc2PKRo796LYfW6mGJtvByOE/YfFXl2L5djN+b2/+XYrVk5Do5My2PfsDrqV3/cHA4ujZuw9XMkEe3mBXPyzmwodC7H2ZD+aOQFTpn+LfSFUOpDLvL9rUhPO+VErDj/sxtbNudPPdErxwfAAJxOyza5F9X3+fB6+LKfmc6HdlnSN2XfVFX/ZjcPcUC4bFA6EXOce+8nW8iSBXKc9pQf1wfb0r6v+tZDIBHJ/JRczzmh7I7Wm2m1ZebiXOzbxsRb3FrvP5c39ZGMkkAMAAAAA4Lq7lIFcHDXixc+pIG2mEPO3ylHdqUf9dT1qTyux8WM6ECrE2rMhkVS7ru1bqR1rs/Oxdr8atXY99ZfbsXmn1BegnZS8vh/+md4RNhNzN9NtKsfaD8n3LFai8nP3uZxArq31ppIKn2aisLQRlae147rqO9UopwOv2VJsDuwUTIc5hVh5kHz2bWP0zqYB2TmfWywdvzMttyxmQ7huGR6OJfrnoG8+d589zva3U2feDq1OYJQKTgs/rEX50Xbsdvp9PAd962LIrsjzjf2Ea3nsQK4QhaRvnfZsPttN+pRaV50yYqdnOtiaWbwX1Zcn43Jwevzk2W1vPE+H3MkYp8amcncl5tL3b21HY2DuJxsjgRwAAAAAANfd5QzkOjq7gh6tZn78zy03VmPrrzN+xD9qRO0/+cFbt8z9tB31p71gIL/vrdh7MLqewlLleBdeb7dSfiDX0fq7Gus3sp8fKDfWo/p3XsTWaUs6tExK5zjH5InxZOd8onJjJco7Y+7NOzqM+u9jzOfMXKw/PRgaKrbePY7Vs8asUxbvxXbuuJ348rGfcC2PHci11827wZ2a6VJYuhe1zNGQfT7VMoFlt2w87+4RHK/tzbfjjPFcrP5eHxLETjZGAjkAAAAAAK67yxvIdX0+iN1HG7G6XOyFObPzUbq5EY939kfvzOrT/LAbj++uRrEbNnTred2IVruedDAwqu+deqr316N0unNpLortejbb7eke8TdOIHfsqBkHL6tRvl2K+dMwJanv2d4ZO8+asf+sHKuZnWvZd6adLTvnI0tnvJZXY+PXatTenYzZxD7txfaDvvns9Hd5PcpPd1O7uUY4Ooy9Z5uxcbPUm8t2KfxQitLtclRfHuQftdjvi8Z+wrU8QSB3fLd5st5Xumuru0bH7dOnemxl+jMTCw+7Ee0EbT8em8d9Y1yI+aX2/D+qxf7Ifk82RgI5AAAAAACuu75ADvh6cgI5AAAAAADg2hHIwTcjkAMAAAAAgO+BQA6+GYEcAAAAAAB8DwRy8M0I5AAAAAAA4HsgkINvRiAHAAAAAADfA4EcfDMCOQAAAAAA+B4I5OCbEcgBAAAAAMD3QCAHAAAAAAAAUySQAwAAAAAAgCkSyAEAAAAAAMAUCeQAAAAAAABgigRyAAAAAAAAMEUCOQAAAAAAAJgigRwAAAAAAABMkUAOAAAAAAAApkggBwAAAAAAAFMkkAMAAAAAAIApEsgBAAAAAADAFAnkAAAAAAAAYIoEcgAAAAAAADBFAjkAAAAAAACYIoEcAAAAAAAATJFADgAAAAAAAKZIIAcAAAAAAABTJJADAAAAAACAKRLIAQAAAAAAwNRE/D8IwO4IDuZjFgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[descricao]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="430.666666666667,191.333333333333" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                      <ui:MultipleAssign.AssignOperations>
+                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow(1)]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">[descricao]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow(2)]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">[valor_livro]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow(3)]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">[stock_livro]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow(4)]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">[str_titulolivro]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                        </scg:List>
+                      </ui:MultipleAssign.AssignOperations>
+                    </ui:MultipleAssign>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEachRow>
+            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="506.666666666667,114.666666666667" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="sheet1" WorkbookPath="Extração.xlsx" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAF5SURBVDhPlVM9S8NQFBW0+QOO2h+gU9vdSbuLNP0HprtDfoBIhYKgWFyFLLpUC10EjbvawcFC4qJDm4CDllQdHHq9JzdfbYLUA4e8d98959738t4cESnMA2afOSuQC40Cg31EkrBtm3Rdp4qqklqtkmEYwUoKDRi4MhZ0u12az+VoYYowzIALg6GMBVqt5gs2ymWyLCuaL+fzQcYEhikDx3H8LkzTpMt2299C2EUG0gbYf6FUikRJZiBtEFaECbo5bjb/ZxAm79Xr/nxb06KY53l+LIG0QaFYjAQ4yOQfQTdTCAy+HJkycIBLfOIQ4AtRhbe1zmajd5fGFt+J+x1hZNBZJfqwEPgbt1sifNwlOoM0NBjcEJ3z8I4XR3E3KXwOiF5aUqy1iEjiDF4vxAS8WpMqvUOiJ2bviKtvSlXkoSDWA4P4Kr89SCJMkMwcB1/qrPATupa8H/4bYHCVGxhNAC0+n8Yd9LliNvzHhOd8wvxGZEYglzWk/AJk0E1AkKBI3AAAAABJRU5ErkJggg==" InformativeScreenshot="134215be5372ae1647fd2926a0b3b0cb.png" Selector="&lt;html app='chrome.exe' url='https://books.toscrape.com' /&gt;" Url="https://books.toscrape.com" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
